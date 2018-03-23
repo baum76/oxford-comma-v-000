@@ -1,10 +1,10 @@
 def oxford_comma(array)
   if array.count == 1
     array.join
-  elsif # if array has 2 elements
+  elsif array.count == 2
       array.join(" and ")
-  else    
+  else
    last = array.pop
    array.join(", ") + ", and " + last.to_s
-  end 
+  end
 end
